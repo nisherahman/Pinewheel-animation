@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    margin:0px 10%;
+}
+.heading{
+    text-align:center;
+    font-family: 'Anton', sans-serif;
+    font-weight:400;
+    font-size:45px;
+    color:#222292;
+    text-transform:capitalize;
+}
+
+.content{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.item {
+    height: 450px;
+    border-radius: 25px;
+    margin: 20px 40px;
+    background-color: beige;
+    position:relative;
+    box-shadow: 13px 13px 25px #cbced1, -13px -13px 25px #fff;
+}
+.item img {
+    width: 400px;
+    margin-top:20px;
+}
+.pinwheel1 {
+    position: relative;
+    z-index:1000;
+    transition: transform 10s;
+    cursor: pointer; 
+}
+.pinwheel2{
+    position: relative;
+    z-index:1000;
+    animation: pinwheel 4s linear infinite;
+}
+.stick {
+    position: absolute;
+    top:100px;
+    left:50px;
+    transform: translate(-50px);
+}
+.pinwheel1:hover {
+    transform: rotate(2700deg);
+}
+.button {
+    margin-top:150px;
+    margin-left:120px;
+    width:126px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    background:#811581;
+    padding:20px;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+.button:hover{
+    background: royalblue;
+}
+.button a{
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight:700;
+}
+
+
+
+
+footer {
+    margin-top:120px;
+    text-align: center;
+}
+footer h3{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight:700;
+}
+footer p{
+    margin-top:10px;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight:700;
+}
+@keyframes pinwheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(2700deg);
+    }
+}
